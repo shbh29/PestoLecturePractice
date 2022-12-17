@@ -1,0 +1,12 @@
+document.querySelector("#B > p").addEventListener("click", function(event) {
+    event.stopPropagation();
+    console.log("p");
+});
+
+document.querySelector("#A").addEventListener("click", function(event) {
+    console.log("A");
+}, true);
+
+document.querySelector("#B").addEventListener("click", function(event) {
+    console.log("B");
+});

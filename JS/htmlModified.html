@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="script.js" type="module"></script>
+    </head>
+    <body>
+        <ul onclick="printMyTag(this.tagName)">
+            <li>tag 1</li>
+            <li>tag 2</li>
+        </ul>
+
+        <div id="abc"></div>
+
+        <script>
+            function printMyTag(tagName) {
+                let div = document.querySelector("#abc");
+                let p = document.createElement('p');
+                p.innerHTML= tagName;
+                div.appendChild(p);
+            }
+
+            // let ul = document.querySelector("ul");
+
+            // ul.addEventListener("click", function(event) {
+            //     printMyTag(`this.tagName: ${this.innerHTML}`);
+            //     console.log(`event.target.tagName: ${event.target.tagName}`);
+            // });
+        </script>
+    </body>
+</html>

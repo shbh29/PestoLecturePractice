@@ -1,0 +1,5 @@
+any object that has Symbol.interator implemented will be traversed by for of loop. for of loop
+can traverse through iterables. Iterables example are array, map, dom elements, sets.
+
+returning object from symbol.iterator method should have a next method implemented.
+next method should return an object with specific keys { value: 'value', done: false/true};

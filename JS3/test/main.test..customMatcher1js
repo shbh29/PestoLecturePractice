@@ -1,0 +1,13 @@
+expect.extend({
+    toBeZero(expectedValue) {
+      return {
+          pass: expectedValue == 0,
+          message: () => `${expectedValue} is expected to be 0`
+      }
+  }
+})
+    
+
+test("value should be zero", () => {
+    expect(1).toBeZero();
+})

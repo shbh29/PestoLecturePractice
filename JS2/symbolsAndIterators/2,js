@@ -1,0 +1,5 @@
+const {sym} = require('./1.js');
+
+console.log(sym === Symbol.for('a2'));
+console.log(Symbol.keyFor(sym));
+

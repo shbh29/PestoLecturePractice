@@ -1,0 +1,6 @@
+toMatch -- String
+toContains --  First Problem Then Solution with Error in Array and Sets
+toThrow -- empty and with Parameter
+CallBack -- Problem and solution with Done(without calling done and then calling done)
+Promises -- just return promise and then test should wait for promise to settle.
+
