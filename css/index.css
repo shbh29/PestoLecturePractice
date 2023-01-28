@@ -1,0 +1,23 @@
+.myheading::first-letter {
+    font: 1.2em;
+    color: red;
+}
+
+body {
+    counter-reset: h1;
+}
+
+
+
+h1::before {
+    counter-increment: h1;
+    content: counter(h1);
+}
+
+/* h1::selection {
+    background-color: yellow;
+} */
+
+div[class] {
+    background-color: lightblue;
+}
