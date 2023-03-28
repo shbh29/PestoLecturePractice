@@ -15,4 +15,14 @@ const _ = require("lodash");
 console.log(process.env.MYVAR);
 
 console.log("Hello NOde module!");
-console.log("Hello Shubham!");
+const EventEmitter = require("events");
+
+const newInstance = new EventEmitter();
+
+newInstance.on("myEvent", function(...argv) {
+    console.log("handler was called!");
+    console.log(argv);
+});
+
+
+newInstance.emit("myEvent", 1, 2, "Shubham");
