@@ -29,7 +29,6 @@ myReadFn.prototype._read = function() {
 const mrf = new myReadFn();
 
 
-// todo check what is full form of mrf zlx tyres
 mrf.setEncoding("utf-8");
 
 mrf.pipe(process.stdout);
